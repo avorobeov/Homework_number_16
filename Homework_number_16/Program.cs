@@ -14,6 +14,7 @@ namespace Homework_number_16
             int maximumRandomNumber = 27;
             int minimalRandomNumber = 1; 
             int randomNumber = random.Next(minimalRandomNumber, maximumRandomNumber);
+            int step = randomNumber -1;
             int startIndex = 100;
             int endIndex = 1000;
             int numberOfMultiples = 0;
@@ -30,6 +31,7 @@ namespace Homework_number_16
                     if (remainder == 0)
                     {
                         numberOfMultiples++;
+                        i += step;
                     }
                 }
             }
